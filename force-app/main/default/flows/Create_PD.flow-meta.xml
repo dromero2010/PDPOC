@@ -91,7 +91,7 @@
             <targetReference>Record_ID</targetReference>
         </connector>
     </start>
-    <status>Active</status>
+    <status>Obsolete</status>
     <variables>
         <name>ExternalID</name>
         <dataType>String</dataType>

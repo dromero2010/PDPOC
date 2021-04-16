@@ -23,6 +23,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Product2.DisplayUrl</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Product_PD__c.Date_of_Production__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -60,6 +65,10 @@
     <layoutAssignments>
         <layout>Product_PD__c-Product %28PD%29 Layout</layout>
     </layoutAssignments>
+    <tabVisibilities>
+        <tab>PD_Document__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
     <userLicense>Salesforce</userLicense>
     <userPermissions>
         <enabled>true</enabled>
