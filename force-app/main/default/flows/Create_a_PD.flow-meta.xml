@@ -25,18 +25,12 @@
     <recordCreates>
         <name>Create_PD_Record</name>
         <label>Create PD Record</label>
-        <locationX>266</locationX>
-        <locationY>383</locationY>
+        <locationX>352</locationX>
+        <locationY>234</locationY>
         <inputAssignments>
             <field>Name</field>
             <value>
                 <elementReference>PD_Name</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>PD_ID__c</field>
-            <value>
-                <elementReference>recordId</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -45,14 +39,20 @@
                 <elementReference>Get_Product_Record.DisplayUrl</elementReference>
             </value>
         </inputAssignments>
+        <inputAssignments>
+            <field>Product__c</field>
+            <value>
+                <elementReference>Get_Product_Record.Id</elementReference>
+            </value>
+        </inputAssignments>
         <object>PD_Document__c</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
     <recordLookups>
         <name>Get_Product_Record</name>
         <label>Get Product Record</label>
-        <locationX>109</locationX>
-        <locationY>36</locationY>
+        <locationX>114</locationX>
+        <locationY>66</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Create_New_PD</targetReference>
@@ -72,8 +72,8 @@
     <screens>
         <name>Create_New_PD</name>
         <label>Create New PD</label>
-        <locationX>185</locationX>
-        <locationY>186</locationY>
+        <locationX>114</locationX>
+        <locationY>234</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -102,7 +102,7 @@
             <targetReference>Get_Product_Record</targetReference>
         </connector>
     </start>
-    <status>Active</status>
+    <status>Draft</status>
     <variables>
         <name>recordId</name>
         <dataType>String</dataType>
