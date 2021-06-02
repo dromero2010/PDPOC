@@ -81,11 +81,6 @@
             <targetReference>Create_PD_Record</targetReference>
         </connector>
         <fields>
-            <name>DisplayRecordId</name>
-            <fieldText>&lt;p&gt;{!recordId}&lt;/p&gt;</fieldText>
-            <fieldType>DisplayText</fieldType>
-        </fields>
-        <fields>
             <name>PD_Name</name>
             <dataType>String</dataType>
             <fieldText>PD Name</fieldText>
@@ -102,7 +97,7 @@
             <targetReference>Get_Product_Record</targetReference>
         </connector>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
     <variables>
         <name>recordId</name>
         <dataType>String</dataType>
